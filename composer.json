@@ -1,20 +1,26 @@
 {
     "type": "project",
     "license": "proprietary",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "git@github.com:zverevvaleriy/proto-generator.git"
+        }
+    ],
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/annotations": "^1.13",
         "symfony/console": "5.3.*",
         "symfony/dotenv": "5.3.*",
         "symfony/flex": "^1.3.1",
         "symfony/framework-bundle": "5.3.*",
         "symfony/runtime": "5.3.*",
-        "symfony/yaml": "5.3.*"
-    },
-    "require-dev": {
+        "symfony/yaml": "5.3.*",
+        "zverevvaleriy/proto-generator": "dev-main"
     },
     "config": {
         "optimize-autoloader": true,
@@ -58,5 +64,8 @@
             "allow-contrib": false,
             "require": "5.3.*"
         }
+    },
+    "require-dev": {
+        "symfony/maker-bundle": "^1.34"
     }
 }
